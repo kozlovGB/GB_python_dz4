@@ -1,8 +1,9 @@
 import random
 polinom="" 
 k=int(input('задайте натуральную степень: '))
-a=[random.randint(0,10) for _ in range(k)]#список значений множителей
+a=[random.randint(0,100) for _ in range(k)]#список значений множителей
 b=[random.randint(0,1) for _ in range(k)]# определяем существует ли элемент x степени соответствующей его месту в списке или нет.
+a[-1]=random.randint(1,100)
 print("a=",a)
 print('b=',b)
 for i in range(k-1,-1,-1):
